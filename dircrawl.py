@@ -6,18 +6,19 @@ from termcolor import colored, cprint
 def main():
     if len(sys.argv) < 2:
         print('''
-            Usage:
-                This program will search for instances of the word "password" within a file or directory.
-                
-                Options:
-                dir  -   Search the files in the current Directory
-                -R   -   Search the files in this directory and all directories in it
-                -f   -   Search a specific file
-                
-                Examples:
-                dir
-                -R
-                -f web.config''')
+    Usage:
+        This program will search for instances of the word "password" within a file or directory.
+
+        Options:
+        dir  -   Search the files in the current Directory
+        -R   -   Search the files in this directory and all directories in it
+        -f   -   Search a specific file
+
+        Examples:
+        dir
+        -R
+        -f web.config
+        ''')
     elif  sys.argv[1] == "dir":
         try:
             lookForPasswords = re.compile(r'.*password.*', re.I)
