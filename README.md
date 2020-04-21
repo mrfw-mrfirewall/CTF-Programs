@@ -19,4 +19,4 @@ I plan to add other options and features such as the following:
                 Examples:
                 dir
                 -R
-                -f web.configa
+                -f web.configs
